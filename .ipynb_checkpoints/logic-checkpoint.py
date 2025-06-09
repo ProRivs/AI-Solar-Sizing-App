@@ -97,7 +97,14 @@ def recommend_components(daily_energy, budget, components_db, install_type="urba
             avg_costs.append(comp[price_field]["avg"])
             lifespans.append(float(comp["lifespan"].split("-")[0]) if "-" in comp["lifespan"] else float(comp["lifespan"]))
         
-        input_features = np.array([[daily_energy, budget / 1_000_000, np.mean(avg_costs), np.mean(lifespans), 1 if install_type == "urban" else 0]])
+        # Create input features as DataFrame to preserve column names
+        input_features = pd.DataFrame({
+            "daily_energy_kwh": [daily_energy],
+            "budget_million_xaf": [budget / 1_000_000],
+            "avg_cost": [np.mean(avg_costs)],
+            "lifespan": [np.mean(lifespans)],
+            "install_type": [1 if install_type == "urban" else 0]
+        })
         input_scaled = scaler.transform(input_features)
         prediction = grid_search.predict(input_scaled)[0]
         distances, indices = grid_search.best_estimator_.kneighbors(input_scaled)
