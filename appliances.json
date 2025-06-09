@@ -1,0 +1,27 @@
+{
+  "Bulb": {
+    "power": 10,
+    "typical_hours": 5.0,
+    "power_factor": 1.0
+  },
+  "Fan": {
+    "power": 50,
+    "typical_hours": 8.0,
+    "power_factor": 0.8
+  },
+  "TV": {
+    "power": 100,
+    "typical_hours": 4.0,
+    "power_factor": 0.9
+  },
+  "Refrigerator": {
+    "power": 150,
+    "typical_hours": 24.0,
+    "power_factor": 0.85
+  },
+  "Phone Charger": {
+    "power": 5,
+    "typical_hours": 2.0,
+    "power_factor": 1.0
+  }
+}

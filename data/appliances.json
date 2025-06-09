@@ -1,0 +1,22 @@
+{
+  "LED Bulb": {
+    "power": 10,
+    "typical_hours": 5
+  },
+  "Ceiling Fan": {
+    "power": 75,
+    "typical_hours": 8
+  },
+  "Refrigerator": {
+    "power": 150,
+    "typical_hours": 24
+  },
+  "Television": {
+    "power": 100,
+    "typical_hours": 4
+  },
+  "Laptop": {
+    "power": 50,
+    "typical_hours": 6
+  }
+}
