@@ -8,9 +8,9 @@
       "best_for": "Urban households, high-budget systems",
       "lifespan": "10-15 years",
       "price_per_kwh_xaf": {
-        "min": 400000,
-        "avg": 450000,
-        "max": 500000
+        "min": 150000,
+        "avg": 1000000,
+        "max": 2000000
       },
       "pros": [
         "Long lifespan",
@@ -28,7 +28,7 @@
       "best_for": "Rural households, low-budget systems",
       "lifespan": "5-8 years",
       "price_per_kwh_xaf": {
-        "min": 200000,
+        "min": 100000,
         "avg": 250000,
         "max": 300000
       },
@@ -38,6 +38,54 @@
       ],
       "cons": [
         "Shorter lifespan"
+      ]
+    },
+    {
+      "id": "gel",
+      "name": "Gel Battery",
+      "tagline": "Maintenance-Free & Deep Cycle Ready",
+      "description": "A type of sealed, valve-regulated lead-acid (VRLA) battery where the electrolyte is a gel. It's known for being maintenance-free, spill-proof, and resistant to vibration.",
+      "best_for": "Off-grid systems, telecoms, and installations where regular maintenance is difficult.",
+      "lifespan": "5-9 years",
+      "price_per_kwh_xaf": {
+        "min": 70000,
+        "avg": 150000,
+        "max": 200000
+      },
+      "pros": [
+        "Completely maintenance-free",
+        "Spill-proof design",
+        "Good performance in deep cycle applications",
+        "Resistant to shock and vibration"
+      ],
+      "cons": [
+        "Higher cost than tubular batteries",
+        "Sensitive to overcharging",
+        "Lower power output than AGM batteries"
+      ]
+    },
+    {
+      "id": "opzv",
+      "name": "OPzV Battery",
+      "tagline": "Premium Long-Life & High Reliability",
+      "description": "OPzV (Ortsfeste Panzerplatten Versiegelt) is a top-tier battery combining durable tubular plates with a maintenance-free gel electrolyte. It is designed for maximum lifespan and reliability in critical applications.",
+      "best_for": "Industrial-scale solar, telecom towers, data centers, and critical infrastructure where long-term reliability is essential.",
+      "lifespan": "15-20 years",
+      "price_per_kwh_xaf": {
+        "min": 135000,
+        "avg": 300000,
+        "max": 7000000
+      },
+      "pros": [
+        "Extremely long service life",
+        "Very high number of charge cycles",
+        "Excellent deep discharge performance",
+        "Completely maintenance-free"
+      ],
+      "cons": [
+        "Very high initial cost",
+        "Heavy and bulky",
+        "Lower charge/discharge rates than Lithium"
       ]
     }
   ],
@@ -50,9 +98,9 @@
       "best_for": "Space-constrained roofs",
       "lifespan": "20-25 years",
       "price_per_watt_xaf": {
-        "min": 600,
-        "avg": 700,
-        "max": 800
+        "min": 45000,
+        "avg": 100000,
+        "max": 140000
       },
       "pros": [
         "High efficiency",
@@ -70,9 +118,9 @@
       "best_for": "Large installations, budget systems",
       "lifespan": "15-20 years",
       "price_per_watt_xaf": {
-        "min": 400,
-        "avg": 500,
-        "max": 600
+        "min": 73000,
+        "avg": 120000,
+        "max": 150000
       },
       "pros": [
         "Affordable",
@@ -92,9 +140,9 @@
       "best_for": "Standard installations",
       "lifespan": "10-15 years",
       "price_per_kw_xaf": {
-        "min": 300000,
-        "avg": 350000,
-        "max": 400000
+        "min": 200000,
+        "avg": 400000,
+        "max": 1000000
       },
       "pros": [
         "Cost-effective",
@@ -154,7 +202,7 @@
       "best_for": "Large, high-efficiency systems",
       "lifespan": "10-15 years",
       "price_per_unit_xaf": {
-        "min": 150000,
+        "min": 100000,
         "avg": 200000,
         "max": 250000
       },
@@ -177,7 +225,7 @@
     "price_per_system_xaf": {
       "min": 100000,
       "avg": 150000,
-      "max": 200000
+      "max": 2000000
     },
     "pros": [
       "Professional",

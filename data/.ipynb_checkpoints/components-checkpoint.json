@@ -1,0 +1,156 @@
+{
+  "batteries": [
+    {
+      "id": "li-ion",
+      "name": "Lithium-Ion (LiFePO4) Battery",
+      "tagline": "Long Lifespan & High Efficiency",
+      "description": "Lithium batteries are lightweight, efficient, and durable, with deep discharge capabilities.",
+      "best_for": "Residential homes and businesses prioritizing long-term value.",
+      "lifespan": "10 - 15 years or 4000+ charge cycles",
+      "price_per_kwh_xaf": {
+        "min": 250000,
+        "max": 450000,
+        "avg": 350000
+      },
+      "pros": [
+        "Long life",
+        "High efficiency",
+        "No maintenance",
+        "Lightweight"
+      ],
+      "cons": [
+        "Higher initial cost"
+      ]
+    },
+    {
+      "id": "tubular",
+      "name": "Tubular Lead-Acid Battery",
+      "tagline": "Reliable & Cost-Effective",
+      "description": "Tubular batteries are robust and suited for regular cycling, but require maintenance.",
+      "best_for": "Budget-conscious users and off-grid systems.",
+      "lifespan": "4 - 6 years or 1500 charge cycles",
+      "price_per_kwh_xaf": {
+        "min": 100000,
+        "max": 160000,
+        "avg": 130000
+      },
+      "pros": [
+        "Lower initial cost",
+        "Widely available",
+        "Robust technology"
+      ],
+      "cons": [
+        "Shorter lifespan",
+        "Requires maintenance",
+        "Heavy"
+      ]
+    }
+  ],
+  "solarPanels": [
+    {
+      "id": "mono",
+      "name": "Monocrystalline Solar Panel",
+      "tagline": "High Efficiency & Sleek Design",
+      "description": "Monocrystalline panels offer high efficiency due to their single-crystal structure.",
+      "best_for": "Space-constrained installations.",
+      "lifespan": "25 - 30 years",
+      "price_per_watt_xaf": {
+        "min": 500,
+        "max": 800,
+        "avg": 650
+      },
+      "pros": [
+        "High efficiency",
+        "Long lifespan",
+        "Aesthetic appeal"
+      ],
+      "cons": [
+        "Higher cost"
+      ]
+    },
+    {
+      "id": "poly",
+      "name": "Polycrystalline Solar Panel",
+      "tagline": "Cost-Effective & Reliable",
+      "description": "Polycrystalline panels balance cost and performance with multiple crystal structures.",
+      "best_for": "Budget-conscious users with sufficient space.",
+      "lifespan": "20 - 25 years",
+      "price_per_watt_xaf": {
+        "min": 400,
+        "max": 600,
+        "avg": 500
+      },
+      "pros": [
+        "Lower cost",
+        "Good performance"
+      ],
+      "cons": [
+        "Lower efficiency"
+      ]
+    }
+  ],
+  "inverters": [
+    {
+      "id": "string",
+      "name": "String Inverter",
+      "tagline": "Cost-Effective & Simple",
+      "description": "String inverters convert DC to AC power for home use, ideal for unshaded roofs.",
+      "best_for": "Standard residential systems.",
+      "lifespan": "8 - 12 years",
+      "price_per_kw_xaf": {
+        "min": 200000,
+        "max": 350000,
+        "avg": 275000
+      },
+      "pros": [
+        "Lower cost",
+        "Simple installation"
+      ],
+      "cons": [
+        "Shading sensitivity"
+      ]
+    }
+  ],
+  "chargeControllers": [
+    {
+      "id": "mppt",
+      "name": "MPPT Charge Controller",
+      "tagline": "Maximum Efficiency",
+      "description": "MPPT controllers optimize power output from solar panels.",
+      "best_for": "All solar systems.",
+      "lifespan": "10 - 15 years",
+      "price_per_unit_xaf": {
+        "min": 100000,
+        "max": 200000,
+        "avg": 150000
+      },
+      "pros": [
+        "High efficiency",
+        "Flexible"
+      ],
+      "cons": [
+        "Higher cost"
+      ]
+    }
+  ],
+  "installation": {
+    "id": "install",
+    "name": "Mounting & Installation",
+    "tagline": "Professional Setup",
+    "description": "Includes mounting hardware, wiring, and professional installation.",
+    "best_for": "All solar systems.",
+    "lifespan": "N/A",
+    "price_per_system_xaf": {
+      "min": 500000,
+      "max": 1000000,
+      "avg": 750000
+    },
+    "pros": [
+      "Professional quality",
+      "Ensures safety"
+    ],
+    "cons": [
+      "Significant upfront cost"
+    ]
+  }
+}
