@@ -1,0 +1,17 @@
+{
+  "Yaounde": {
+    "avg_irradiance": 5.0,
+    "min_irradiance": 4.5,
+    "max_irradiance": 5.5
+  },
+  "Douala": {
+    "avg_irradiance": 4.8,
+    "min_irradiance": 4.3,
+    "max_irradiance": 5.3
+  },
+  "Garoua": {
+    "avg_irradiance": 5.2,
+    "min_irradiance": 4.7,
+    "max_irradiance": 5.7
+  }
+}

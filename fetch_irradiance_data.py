@@ -3,7 +3,7 @@ import pandas as pd
 from datetime import datetime, timedelta
 
 # NASA POWER API endpoint
-base_url = "https://power.larc.nasa.gov/api/temporal/daily/point"
+base_url = "https://power.larc.nasa.gov/api/temporal/hourly/point"
 
 # Coordinates for Yaounde, Douala, Garoua
 locations = {
@@ -14,8 +14,8 @@ locations = {
 
 # Parameters
 parameters = "ALLSKY_SFC_SW_DWN"  # Surface solar irradiance (kWh/m²/day)
-start_date = "20150101"  # Extended to 2015 for robust training
-end_date = (datetime.now() - timedelta(days=1)).strftime("%Y%m%d")  # Up to yesterday
+start_date = "20150101"
+end_date = (datetime.now() - timedelta(days=1)).strftime("%Y%m%d")
 
 # Fetch data
 data = {}
@@ -28,9 +28,13 @@ for city, coords in locations.items():
         irradiance = []
         for date, value in json_data["properties"]["parameter"]["ALLSKY_SFC_SW_DWN"].items():
             if value != -999:
-                dates.append(datetime.strptime(date, "%Y%m%d"))
-                irradiance.append(value)
-        data[city] = pd.DataFrame({"ds": dates, "y": irradiance})
+                dates.append(datetime.strptime(date, "%Y%m%d%H"))
+                irradiance.append(value / 24)
+        df = pd.DataFrame({"ds": dates, "y": irradiance})
+        df["ds"] = df["ds"].dt.date
+        df = df.groupby("ds").mean().reset_index()
+        df["ds"] = pd.to_datetime(df["ds"])
+        data[city] = df
     else:
         print(f"Failed to fetch data for {city}")
 
