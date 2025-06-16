@@ -384,4 +384,4 @@ else:
     st.warning("Select at least one appliance to estimate your solar system.")
 
 st.markdown("---")
-st.markdown("Built by **ProRivs** | 🚀 Powered by AI | 🇨🇲 Cameroon")
+st.markdown("Built by **SunSmart** | 🚀 Powered by AI | 🇨🇲 Cameroon")
